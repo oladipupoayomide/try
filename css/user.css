@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+     
+     font:15px/1.5 Arial,helvetica,sans-serif;
+     padding: 0;
+     margin:0;
+     background-color: #f4f4f4F4;
+  }
+  .container{
+     width:80%;
+     margin:auto;
+     overflow:hidden;
+  }
+  header{
+     background:#35424a;
+     color:#ffffff;
+     padding-top: 40px;
+     min-height: 70px;
+     border-bottom: #e8491d 5px solid;
+  }
+  header a{
+     color: #ffffff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 16px;
+  
+  }
+  header ul{
+     margin: 0%;
+     padding: 0;
+  }
+  
+  header li{
+     
+     display:inline;
+     padding: 0 10px 0 20px;
+     padding-top: 20px;
+  }
+  
+  header #branding{
+     float:left;
+  
+  }
+  
+  header #branding h1{
+     margin: 0;
+  }
+  
+  header nav{
+     float:right;
+     margin-top: 10px;
+  }
+  
+  header .highlight, header .current a{
+      color: #e8491d;
+      font-weight:bold;
+  }
+  .btn{
+      text-align: center;
+      vertical-align: middle;
+      padding: .67em;
+      cursor: pointer;
+  }
+  .signin-item{
+      display:inline-block;
+      padding-right: .5em;
+  }
+  .signin-btn{
+      max-width: 45%;
+  }
+  .btn-primary{
+      color: white;
+      background-color:#35424a;
+      border: none;
+      border-radius: .3em;
+      font-weight: bold;
+      
+  }
+  .btn-primary:hover{
+      background-color: #e8491d;
+  }
+  .account-btn{
+      max-width: 100%;
+  }
+  
+  .account-item{
+      display:inline-block;
+      padding-right: .5em;
+  }
+  
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 0.5;
+    background: #e8491d;
+    padding: 0px;
+    height: 150vh;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background: #f1f1f1;
+    padding: 100px;
+  }
+  
+  #showcase{
+      min-height: 480px;
+      background:   linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/sampleimages/pic1.jpg');
+      text-align: center;
+      color:#fff;
+       
+  }
+  
+  
+  
+  
+  #showcase h1{
+      margin-top: 100px;
+      font-size: 55px;
+      margin-bottom: 10px;
+      margin: auto;
+  }
+  #showcase p{
+      font-size: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 8px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+      display: block;
+      cursor: pointer;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url(images/sampleimages/pic1.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+    .login-page{
+       width:360px;
+       padding: 10% 0 0;
+       margin: auto;
+    }
+    .form{
+       max-width: 360;
+       margin:0 auto 100px;
+       padding: 45px;
+       text-align: center;
+    
+       padding: 1.5em;
+       background-color: rgba(32, 32, 32, 0.86);
+       color: #f6f6f6;
+     
+    }
+    
+    
+    
+    .form button{
+       font-family: Arial, Helvetica, sans-serif;
+       text-transform: uppercase;
+       outline: 0;
+       background:  #e8491d;
+       width:100%;
+       border:2px;
+       border-radius: 5px;
+       padding: 15px;
+       color: #ffffff;
+       font-size: 14px;
+       cursor: pointer;
+    }
+    
+    
+    .form submit :hover,.form submit:active{
+       background-color:#ffffff;
+    }
+    
+    .form .message{
+       margin: 15px 0 0;
+       color: #e8491d;
+       font-size: 12px;
+    }
+    .form .message a{
+       color: #e8491d;
+       text-decoration: none;
+    }
+    .form .register-form{
+     display: none;
+    }
+    .formtext{
+       float: left;
+    }
+    .recent-transaction-item {
+        padding: 1rem;
+      }
+      .recent-transaction-item-date {
+        color: var(--dark-grey);
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .recent-transactions-area {
+        width: 70%;
+        margin: 2rem auto;
+        color: #e8491d;
+        padding: 2rem;
+        border-top: 10px solid #e8491d;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0px #35424a;
+      }      
